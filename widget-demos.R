@@ -41,7 +41,7 @@ forceNetwork(Links = MisLinks, Nodes = MisNodes,
 # install.packages("leaflet")
 library(leaflet)
 leaflet(quakes) %>%
-  addTiles("//{s}.tiles.mapbox.com/v3/mapbox.natural-earth-2/{z}/{x}/{y}.png") %>%
+  addTiles("https://{s}.tiles.mapbox.com/v3/mapbox.natural-earth-2/{z}/{x}/{y}.png") %>%
   addCircles(color = "#CC0000", weight = 2, radius = ~10^mag / 5,
     popup = ~as.character(stations))
 
