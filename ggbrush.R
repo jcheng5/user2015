@@ -57,5 +57,5 @@ source("dialogpage.R")
 #' p <- ggplot(diamonds, aes(carat, price)) + geom_point() + facet_wrap(~cut)
 #' ggbrush(p)
 #' 
-#' p <- ggplot(diamonds, aes(x=carat)) + geom_bar()
+#' p <- ggplot(diamonds, aes(x=price)) + geom_bar()
 #' ggbrush(p, direction = "x")
